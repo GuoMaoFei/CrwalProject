@@ -3,6 +3,7 @@ from scrapy.linkextractors import LinkExtractor
 from CrwalProject.items import CrwalprojectItem
 from scrapy import Request
 
+#我得测试
 class Myspider(CrawlSpider):
     name='CrawTest'
     allowed_domains = ['mzitu.com']
