@@ -21,6 +21,16 @@ NEWSPIDER_MODULE = 'CrwalProject.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+ITEM_PIPELINES  =  { 'CrwalProject.pipelines.CrwalprojectPipeline' :300 }
+IMAGES_STORE  =  'F:\CrawlImage'
+
+IMAGES_THUMBS = {
+    'small': (50, 50),
+    'big': (270, 270),
+}
+
+MEDIA_ALLOW_REDIRECTS = True
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
